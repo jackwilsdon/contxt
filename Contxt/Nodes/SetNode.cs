@@ -1,4 +1,6 @@
-﻿namespace Contxt.Nodes
+﻿using Contxt.Clients;
+
+namespace Contxt.Nodes
 {
     public class SetNode<T> : ValueNode<T> where T : class
     {

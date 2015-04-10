@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 
+using Contxt.Clients;
+
 namespace Contxt.Nodes
 {
     public class ChoiceNode<T> : NodeBase<T> where T : class

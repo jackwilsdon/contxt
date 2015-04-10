@@ -1,6 +1,6 @@
 ﻿using Contxt.Nodes;
 
-namespace Contxt
+namespace Contxt.Clients
 {
     /// <summary>
     /// Client implementation base that uses a <see cref="Contxt.PropertySet"/> for <see cref="Get{I}(string, I)"/> and <see cref="Set(string, object)"/>.

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text.RegularExpressions;
 
-using Contxt.Nodes;
 using Contxt.Clients;
-using System.Reflection;
+using Contxt.Nodes;
 
 namespace Contxt.Nodes.Containers
 {

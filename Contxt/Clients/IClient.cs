@@ -1,6 +1,6 @@
 ﻿using Contxt.Nodes;
 
-namespace Contxt
+namespace Contxt.Clients
 {
     /// <summary>
     /// Receiver for any actions performed by a node.
