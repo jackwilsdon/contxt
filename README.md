@@ -1,2 +1,2 @@
 ﻿# Contxt
-A simple directed draph library for C#.
+A simple directed graph library for C#.
