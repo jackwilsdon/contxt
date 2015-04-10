@@ -16,7 +16,7 @@ namespace Contxt.Clients
 
         /// <summary>
         /// Whether or not to repeat choices if the user's choice is invalid.
-        /// <para>If <b>true</b>, <see cref="DoChoice(INode<T>, INode<T>[], out INode<T>)"/> will be called until it returns <b>true</b>.</para>
+        /// <para>If <b>true</b>, <see cref="DoChoice(INode{T}, INode{T}[], out INode{T})"/> will be called until it returns <b>true</b>.</para>
         /// </summary>
         public bool RepeatChoiceOnFailure = false;
 
