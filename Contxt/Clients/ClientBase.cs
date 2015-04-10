@@ -10,7 +10,7 @@ namespace Contxt.Clients
     public abstract class ClientBase<T> : IClient<T> where T : class
     {
         /// <summary>
-        /// The property set used by <see cref="Get{I}(string, I)"/> and <see cref="Set(string, object)"/>
+        /// The property set used by <see cref="Get{I}(string, I)"/> and <see cref="Set(string, object)"/>.
         /// </summary>
         private PropertySet propertySet = new PropertySet();
 
@@ -21,7 +21,7 @@ namespace Contxt.Clients
         public bool RepeatChoiceOnFailure = false;
 
         /// <summary>
-        /// Create a new <see cref="Contxt.ClientBase{T}"/> instance.
+        /// Create a new <see cref="ClientBase{T}"/> instance.
         /// </summary>
         /// <param name="repeatChoiceOnFailure"> Whether or not to repeat choices if the user's choice is invalid.</param>
         /// <seealso cref="RepeatChoiceOnFailure"/>
