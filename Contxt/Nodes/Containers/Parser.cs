@@ -10,8 +10,8 @@ namespace Contxt.Nodes.Containers
 {
     public class Parser
     {
-        private static Regex NodeExpression = new Regex("^\\[([0-9]+)\\] (?:(.+?) )?\\[([A-Za-z]+)(?:,(.*))*\\] (.*)$");
-        private static Regex WhitespaceExpression = new Regex("^\\s+$");
+        private static readonly Regex NodeExpression = new Regex("^\\[([0-9]+)\\] (?:(.+?) )?\\[([A-Za-z]+)(?:,(.*))*\\] (.*)$");
+        private static readonly Regex WhitespaceExpression = new Regex("^\\s+$");
 
         private Dictionary<string, Type> containerTypes = new Dictionary<string, Type>();
         private Dictionary<int, INodeContainer> containers = new Dictionary<int, INodeContainer>();
