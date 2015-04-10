@@ -10,6 +10,7 @@ namespace Contxt.Nodes.Containers
 {
     public class Parser
     {
+        private static readonly string CommentPrefix = "#";
         private static readonly Regex NodeExpression = new Regex("^\\[([0-9]+)\\] (?:(.+?) )?\\[([A-Za-z]+)(?:,(.*))*\\] (.*)$");
         private static readonly Regex WhitespaceExpression = new Regex("^\\s+$");
 
@@ -106,7 +107,7 @@ namespace Contxt.Nodes.Containers
 
         private ParseResult ParseLine(int lineNumber, string line)
         {
-            if (line.Length == 0)
+            if (line.Length == 0 || line.StartsWith(CommentPrefix))
             {
                 return ParseResult.Success;
             }
