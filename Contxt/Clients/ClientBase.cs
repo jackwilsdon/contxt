@@ -14,8 +14,17 @@ namespace Contxt
         /// </summary>
         private PropertySet propertySet = new PropertySet();
 
+        /// <summary>
+        /// Whether or not to repeat choices if the user's choice is invalid.
+        /// <para>If <b>true</b>, <see cref="DoChoice(INode<T>, INode<T>[], out INode<T>)"/> will be called until it returns <b>true</b>.</para>
+        /// </summary>
         public bool RepeatChoiceOnFailure = false;
 
+        /// <summary>
+        /// Create a new <see cref="Contxt.ClientBase{T}"/> instance.
+        /// </summary>
+        /// <param name="repeatChoiceOnFailure"> Whether or not to repeat choices if the user's choice is invalid.</param>
+        /// <seealso cref="RepeatChoiceOnFailure"/>
         public ClientBase(bool repeatChoiceOnFailure = false)
         {
             RepeatChoiceOnFailure = repeatChoiceOnFailure;
