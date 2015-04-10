@@ -1,0 +1,52 @@
+﻿[1] Story [Text,2] It's summertime again, vacation time. You go to your uncle's house. He takes you on a tour around the city. There are many old buildings, but the oldest of all is on Main Street. He tells you it's haunted.
+[2] Story [Text,3] You've just woken up.
+
+[3] Story [Choice,4,5] What do you want to do today?
+
+[4] You [Value,6] Go to the park.
+[5] You [Value,7] Visit the haunted house.
+
+[6] destination [Set,8] park
+[7] destination [Set,8] house
+
+[8] Story [Text,9] You set off.
+[9] Story [Text,10] On the way, you walk through the park.
+[10] Story [Text,11] You see a friendly looking dog in the park.
+
+[11] Story [Choice,12,13] What do you do?
+
+[12] You [Value,14] Walk past it.
+[13] You [Value,16] Pet it.
+
+[14] destination [Branch,park:50,house:15] park
+
+[15] Story [Text,17] You walk past and reach the house.
+[16] Story [Text] The dog bites your arm off and you die.
+
+[17] Story [Text,18] Standing outside the house, you feel a chill run down your neck.
+
+[18] Story [Choice,19,20] What do you do?
+
+[19] You [Value,21] Knock on the door.
+[20] You [Value,3] Go back to your uncle's house.
+
+[21] Story [Text,22] The door falls off it's hinges and crushes you.
+[22] Story [Text,23]      ▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄▄
+[23] Story [Text,24]      █                 ▀▀▀▄
+[24] Story [Text,25]     █                      █
+[25] Story [Text,26]    █      ▄██▀▄▄     ▄▄▄    █
+[26] Story [Text,27]  ▄▀ ▄▄▄  █▀▀▀▀▄▄█   ██▄▄█    █
+[27] Story [Text,28] █  █ ▄ ▀▄▄▄▀        █         █
+[28] Story [Text,29] █  █ █▀▄▄     █▀    ▀▄  ▄▀▀▀▄ █
+[29] Story [Text,30]  █ ▀▄ █▄ █▀▄▄ ▀ ▀▀ ▄▄▀    █  █
+[30] Story [Text,31]   █   ▀▄▀█▄▄ █▀▀▀▄▄▄▄▀▀█▀██ █
+[31] Story [Text,32]    █    ██  ▀█▄▄▄█▄▄█▄████ █
+[32] Story [Text,33]     █    ▀▀▄ █   █ █▀██████ █
+[33] Story [Text,34]      ▀▄     ▀▀▄▄▄█▄█▄█▄█▄▀  █
+[34] Story [Text,35]        ▀▄▄                   █
+[35] Story [Text,36]           ▀▀▄▄               █
+[36] Story [Text,37]               ▀▄▄▄▄▄        █
+[37] Story [Text]                     ▀▀▀▀▀▀▀▀
+
+[50] Story [Text,51] As you sit down, a tree falls over and crushes you.
+[51] Story [Text] You die.

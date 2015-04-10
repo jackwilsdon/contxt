@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F156AC8B-7470-47E5-870D-2A0A65CA5003}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{B960E59C-D44C-4C42-8C26-A4F213267DDD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Contxt</RootNamespace>
-    <AssemblyName>Contxt</AssemblyName>
+    <RootNamespace>ContxtExample</RootNamespace>
+    <AssemblyName>Contxt Example</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,7 +30,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\Contxt.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -42,32 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clients\ClientBase.cs" />
-    <Compile Include="Clients\ConsoleClient.cs" />
-    <Compile Include="Clients\IClient.cs" />
-    <Compile Include="IncorrectTypeException.cs" />
-    <Compile Include="Nodes\Containers\BranchNodeContainer.cs" />
-    <Compile Include="Nodes\Containers\ChoiceNodeContainer.cs" />
-    <Compile Include="Nodes\Containers\INodeContainer.cs" />
-    <Compile Include="Nodes\Containers\NodeContainerBase.cs" />
-    <Compile Include="Nodes\Containers\ParseData.cs" />
-    <Compile Include="Nodes\Containers\Parser.cs" />
-    <Compile Include="Nodes\BranchNode.cs" />
-    <Compile Include="Nodes\ChoiceNode.cs" />
-    <Compile Include="Nodes\Containers\ValueNodeContainer.cs" />
-    <Compile Include="Nodes\Containers\SetNodeContainer.cs" />
-    <Compile Include="Nodes\Containers\TextNodeContainer.cs" />
-    <Compile Include="Nodes\INode.cs" />
-    <Compile Include="Nodes\NodeBase.cs" />
-    <Compile Include="Nodes\Containers\ParseResult.cs" />
-    <Compile Include="Nodes\SetNode.cs" />
-    <Compile Include="Nodes\ValueNode.cs" />
-    <Compile Include="PropertySet.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Nodes\TextNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="example.ctxt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contxt\Contxt.csproj">
+      <Project>{f156ac8b-7470-47e5-870d-2a0a65ca5003}</Project>
+      <Name>Contxt</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
