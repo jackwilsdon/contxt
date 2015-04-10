@@ -111,6 +111,20 @@ namespace Contxt.Clients
             Console.WriteLine(node.Value);
         }
 
+        /// <summary>
+        /// Outputs a choice to the user.
+        ///
+        /// <para>
+        /// If the node has a source, it is printed before the
+        /// node's value in the color provided by <see cref="GetColor(string)"/>.
+        /// </para>
+        ///
+        /// <para>This color is also used for the choice numbers and input.</para>
+        /// </summary>
+        /// <param name="node">Node to output.</param>
+        /// <param name="choices">Choices that the user can select from.</param>
+        /// <param name="choice">The node selected by the user.</param>
+        /// <returns><b>true</b> if the user has selected a valid node, otherwise <b>false</b></returns>
         public override bool DoChoice(INode<string> node, INode<string>[] choices, out INode<string> choice)
         {
             // Set the current choice to null.
