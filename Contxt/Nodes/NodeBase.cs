@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Contxt.Clients;
 using Contxt.Nodes;
 
-namespace Contxt
+namespace Contxt.Nodes
 {
     public abstract class NodeBase<T> : INode<T> where T : class
     {
