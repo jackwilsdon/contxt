@@ -3,7 +3,7 @@
 namespace Contxt
 {
     /// <summary>
-    /// Client implementation that uses a <see cref="Contxt.PropertySet"/> for <see cref="Get{I}(string, I)"/> and <see cref="Set(string, object)"/>.
+    /// Client implementation base that uses a <see cref="Contxt.PropertySet"/> for <see cref="Get{I}(string, I)"/> and <see cref="Set(string, object)"/>.
     /// </summary>
     /// <typeparam name="T">Type of node value to be output.</typeparam>
     /// <seealso cref="Contxt.PropertySet"/>
