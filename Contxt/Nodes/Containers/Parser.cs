@@ -36,6 +36,16 @@ namespace Contxt.Nodes.Containers
             containerTypes.Add(type, containerType);
         }
 
+        public void RemoveContainer(string type)
+        {
+            if (!containerTypes.ContainsKey(type))
+            {
+                return;
+            }
+
+            containerTypes.Remove(type);
+        }
+
         private INodeContainer GetContainer(ParseData parseData)
         {
             string type = parseData.Type;
