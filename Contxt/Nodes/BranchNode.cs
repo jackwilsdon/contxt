@@ -23,7 +23,7 @@ namespace Contxt.Nodes
         {
             branches.Add(value, choice);
         }
-    
+
         public override INode<T> Execute(IClient<T> client)
         {
             T value = client.Get(Key, Value);

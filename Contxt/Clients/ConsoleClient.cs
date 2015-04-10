@@ -15,14 +15,14 @@ namespace Contxt.Clients
 
         /// <summary>
         /// Gets the color for a string.
-        /// 
+        ///
         /// <para>
         /// This is calculated by multiplying the last two digits
         /// of the string's hash code. This value is then modded with 6
         /// to find the remainder which ranges between 0-5. It is then
         /// compared against the following lookup table.
         /// </para>
-        /// 
+        ///
         /// <list type="bullet">
         ///   <item>
         ///     <term>0</term>
@@ -87,7 +87,7 @@ namespace Contxt.Clients
 
         /// <summary>
         /// Outputs a node to the user.
-        /// 
+        ///
         /// <para>
         /// If the node has a source, it is printed before the
         /// node's value in the color provided by <see cref="GetColor(string)"/>.

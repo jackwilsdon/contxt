@@ -20,7 +20,7 @@ namespace Contxt.Nodes
         {
             choices.Add(choice);
         }
-    
+
         public override INode<T> Execute(IClient<T> client)
         {
             return client.Choice(this, choices.ToArray());
