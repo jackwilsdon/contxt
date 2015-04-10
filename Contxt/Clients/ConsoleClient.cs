@@ -5,7 +5,7 @@ using Contxt.Nodes;
 namespace Contxt.Clients
 {
     /// <summary>
-    /// Client implementation that uses <see cref="System.Console"/> for output and <see cref="Contxt.Clients.ClientBase"/> for storage.
+    /// Client implementation that uses <see cref="System.Console"/> for output and <see cref="Contxt.Clients.ClientBase{T}"/> for storage.
     /// </summary>
     /// <seealso cref="System.Console"/>
     public class ConsoleClient : ClientBase<string>
