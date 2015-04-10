@@ -1,4 +1,13 @@
-﻿# Contxt
+﻿
+          C
+         / \
+        /   \
+       O     N
+      / \   / \
+     /   \ /   \
+    T     X     T
+
+# Contxt
 A simple directed graph library for C#.
 
 <!--
