@@ -19,8 +19,17 @@ namespace Contxt.Nodes
         /// The source of the node.
         /// </summary>
         string Source { get; }
+
+        /// <summary>
+        /// The value of the node.
+        /// </summary>
         T Value { get; }
 
+        /// <summary>
+        /// Gets the next node in the directed graph.
+        /// </summary>
+        /// <param name="client">The client to use when executing.</param>
+        /// <returns>The next node in the directed graph or <b>null</b> if this is the last node.</returns>
         INode<T> Execute(IClient<T> client);
     }
 }
