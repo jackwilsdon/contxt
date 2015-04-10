@@ -7,7 +7,7 @@ namespace Contxt.Nodes
     /// <summary>
     /// A node in the directed graph.
     /// </summary>
-    /// <typeparam name="T">The type of value in the node</typeparam>
+    /// <typeparam name="T">The type of value in the node.</typeparam>
     public interface INode<T> where T : class
     {
         /// <summary>
