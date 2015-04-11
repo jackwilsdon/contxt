@@ -10,7 +10,7 @@
 # Contxt
 A simple directed graph library for C#.
 
-See [VERSIONING.md] for version numbering scheme.
+See [VERSIONING.md](VERSIONING.md) for version numbering scheme.
 
 ### Current Version: `0.0.0.0 (unfinished)`
 
