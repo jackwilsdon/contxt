@@ -30,7 +30,7 @@ namespace Contxt.Nodes
         /// <summary>
         /// Create a new value node instance with no source.
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="value">The node's value.</param>
         /// <param name="childNode">The node's child.</param>
         /// <seealso cref="ValueNode(string, T, INode{T})"/>
         public ValueNode(T value, INode<T> childNode = null) : this(null, value)
