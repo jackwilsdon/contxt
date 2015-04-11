@@ -3,7 +3,7 @@
 namespace Contxt.Nodes
 {
     /// <summary>
-    /// A node in the directed graph.
+    /// A node that returns it's child upon execution.
     /// </summary>
     /// <typeparam name="T">The type of value in the node.</typeparam>
     public class ValueNode<T> : NodeBase<T> where T : class
