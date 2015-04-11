@@ -16,7 +16,7 @@ namespace Contxt.Nodes
         /// <param name="source">The node's source.</param>
         /// <param name="value">The node's value.</param>
         /// <param name="childNode">The node's child.</param>
-        public TextNode(string source, T value, INode<T> childNode = null) : base(source, value)
+        public TextNode(string source, T value, INode<T> childNode = null) : base(source, value, childNode)
         { }
 
         /// <summary>
@@ -25,7 +25,7 @@ namespace Contxt.Nodes
         /// <param name="value">The node's value.</param>
         /// <param name="childNode">The node's child.</param>
         /// <seealso cref="TextNode(string, T, INode{T})"/>
-        public TextNode(T value, INode<T> childNode = null) : base(value)
+        public TextNode(T value, INode<T> childNode = null) : base(value, childNode)
         { }
 
         /// <summary>

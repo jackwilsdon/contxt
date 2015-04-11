@@ -12,7 +12,7 @@ namespace Contxt.Nodes
             }
         }
 
-        public SetNode(string key, T value, INode<T> childNode = null) : base(key, value)
+        public SetNode(string key, T value, INode<T> childNode = null) : base(key, value, childNode)
         { }
 
         public override INode<T> Execute(IClient<T> client)
